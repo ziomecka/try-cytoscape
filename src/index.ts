@@ -8,6 +8,4 @@ import 'cytoscape-context-menus/cytoscape-context-menus.css';
 
 drawDagre();
 drawRandom();
-
-// throws error that's why is the last
 drawGrid();

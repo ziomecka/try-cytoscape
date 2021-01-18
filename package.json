@@ -37,7 +37,7 @@
     "cytoscape": "3.17.1",
     "cytoscape-cola": "2.4.0",
     "cytoscape-context-menus": "^4.0.0",
-    "cytoscape-d3-force": "1.1.4",
+    "cytoscape-d3-force": "^1.1.4",
     "cytoscape-dagre": "2.3.2",
     "cytoscape-undo-redo": "^1.3.3",
     "d3": "6.3.1",
