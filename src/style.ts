@@ -27,23 +27,6 @@ const edgeStyle: StylesheetStyle ={
     selector: 'edge, edge:selected',
     style: {
         'width': 1,
-        'overlay-opacity': 0,
-        // 'font-size': '10px',
-        // 'line-color': '#ccc',
-        // "source-label": `data(id)`,
-        // "target-label": `data(target)`,
-        'curve-style': 'taxi',
-        // "curve-style": 'unbundled-bezier',
-        // "overlay-opacity": 0.1
-        // "taxi-turn-min-distance": "30px",
-        // "overlay-opacity": 0.1
-        // 'target-arrow-color': '#ccc',
-        // 'target-arrow-shape': 'triangle',
-        // 'curve-style': 'bezier'
-        // "taxi-direction": "horizontal",
-        // "taxi-turn": "75%",
-
-        // 'font-size': '10px',
         'background-color': 'red',
         'control-point-step-size': 1,
     },
@@ -57,22 +40,8 @@ const edgeLabelStyle: StylesheetStyle ={
         'font-size': '5px',
         //@ts-ignore
         'text-rotation': 'autorotate',
-    // 'border-color': 'red'
-    // 'font-size': '5px',
-    // 'line-color': '#ccc',
-    // "source-label": `data(id)`,
-    // "target-label": `data(target)`,
-    // "curve-style": "taxi",
-    // "taxi-turn-min-distance": "30px",
-    // "overlay-opacity": 0.1
-    // 'target-arrow-color': '#ccc',
-    // 'target-arrow-shape': 'triangle',
-    // 'curve-style': 'bezier'
-    // "taxi-direction": "horizontal",
-    // "taxi-turn": "75%",
     },
 };
-
 
 const nodeEdgeStyle: StylesheetStyle = {
     selector: 'node, edge',
@@ -85,5 +54,11 @@ const nodeEdgeStyle: StylesheetStyle = {
     },
 
 };
+const selected: StylesheetStyle = {
+    selector: ':selected',
+    style: {
+    },
 
-export {nodeEdgeStyle, nodeStyle, edgeStyle, edgeLabelStyle, canvas};
+};
+
+export {nodeEdgeStyle, nodeStyle, edgeStyle, edgeLabelStyle, canvas, selected};

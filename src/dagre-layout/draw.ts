@@ -1,4 +1,4 @@
-import cyto from 'cytoscape';
+import {cyto }from '../cyto';
 // @ts-ignore
 import dagre from 'cytoscape-dagre';
 
@@ -9,7 +9,7 @@ import {renderTitle} from '../utils';
 const LAYOUT= 'dagre';
 const TITLE_SELECTOR = `#${LAYOUT} #title`;
 
-const container = document.querySelector(`div#${LAYOUT}`) as HTMLDivElement;
+const container = document.querySelector(`div#${LAYOUT} div`) as HTMLDivElement;
 
 cyto.use(dagre);
 

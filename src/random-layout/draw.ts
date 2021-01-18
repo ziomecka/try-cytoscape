@@ -11,12 +11,12 @@ const INITIAL_LAYOUT = 'grid';
 
 const TITLE_SELECTOR = `#${LAYOUT} #title`;
 
-const container = document.querySelector(`div#${LAYOUT}`) as HTMLDivElement;
-
+const container = document.querySelector(`div#${LAYOUT} div`) as HTMLDivElement;
 
 export function draw () {
     renderTitle(TITLE_SELECTOR, INITIAL_LAYOUT);
 
+    // @ts-ignore
     const cy = cyto({
         container,
         elements: elements,
@@ -27,7 +27,6 @@ export function draw () {
         zoom: 1,
         zoomingEnabled: true,
     });
-
 
     const timeoutFn: ChangeLayoutOptions['timeoutFn'] = (i, cl) => {
         const layout = cy.layout({name: layouts[i]});
