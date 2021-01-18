@@ -15,7 +15,6 @@ cyto('layout', 'custom', CustomLayout);
 const options: CustomLayoutOptions = {
     container,
     elements: elements,
-    headless: true,
     style: [
         {
             selector: 'node',
