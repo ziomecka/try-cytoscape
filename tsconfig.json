@@ -6,7 +6,12 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "lib": [ "es2019", "DOM"],
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
-  "include": ["./src/**/*", "./backend/**/*"]
+  "include": ["./src/**/*", "./backend/**/*"],
 }

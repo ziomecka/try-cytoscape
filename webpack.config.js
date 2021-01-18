@@ -6,8 +6,6 @@ const PORT = 9000;
 
 const { NODES_CNT = 1000, DOCUMENT_FRAG } = process.env;
 
-const documentFrag = !!DOCUMENT_FRAG;
-
 module.exports = {
   entry: './src/index',
   output: {
@@ -25,15 +23,18 @@ module.exports = {
         test: /\.ts$/,
         loader: 'ts-loader',
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.ts', '.js', '.css'],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname,'./src/index.html'),
-      // template: path.resolve(__dirname, documentFrag ? './src/index.html' : './src/index-with-svg.html'),
 
     }),
     new webpack.DefinePlugin({

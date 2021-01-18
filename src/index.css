@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+  margin-bottom: 20px;
+  height: 100vh;
+  overflow: auto;
+}
+
+.layout {
+  position: relative;
+  min-width: 100vw;
+  height: 100vh;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
